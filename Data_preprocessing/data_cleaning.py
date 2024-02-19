@@ -39,7 +39,7 @@ class DataCleaning:
 
 # Usage example
 if __name__ == "__main__":
-    cleaning_instance = DataCleaning('/home/shrikara/PycharmProjects/SusMLOps/csv_files/cleaned_filtered_data_experiment.csv')
+    cleaning_instance = DataCleaning('path/to/Dataset/cleaned_filtered_data_experiment.csv')
     cleaned_data = cleaning_instance.clean_and_filter_data()
     if cleaned_data is not None:
         print(cleaned_data.head())  # Display the first few rows of the cleaned data

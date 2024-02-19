@@ -58,6 +58,40 @@ The thresholds used are:
 The same parameters are used in all alternate approaches as well.
 
 
+## Running the approaches
+To run the different approaches follow the steps given below: 
+### A1 & A2: 
+This approach is for testing the single models
+- Open the Model_reload/model.csv
+- If you want to make inferences using linear model write 'general_model' in model.csv
+- If you want to make inferences using LSTM model write 'lstm' in model.csv
+- Run Approach(A1&A2)/main.py in the terminal.
+
+### A3 & A4:
+This approach is for testing the single models along with periodic retraining of those single models. 
+- Open the Model_reload/model.csv
+- If you want to make inferences using linear model write 'general_model' in model.csv
+- If you want to make inferences using LSTM model write 'lstm' in model.csv
+- In Approach(A3&A4)/Analyser_periodic.py in the function analyse_drift create planner object only for the model that you are testing. for eg example if you are yesting the lstm model you will create the planner object like this self.planner.divergence_detected('lstm')
+- Once done with the above steps run Approach(A3&A4)/main.py in first terminal
+- In the second terminal run Approach(A3&A4)/Monitor_periodic.py
+- In the third terminal run Approach(A3&A4)/training_subsystem.py
+
+### A5:
+This approach is for testing both the models along with switching between those models and periodic retraining of those models
+- In the first terminal run Approach(A5)/main.py
+- In the second terminal run Approach(A5)/Monitor_periodic.py
+- In the third terminal run Approach(A5)/training_subsystem.py
+
+### A6:
+This approach is for testing both the models along with switch between those models and retraining of those models only if drift is detected
+- In the first terminal run Approach(A6)/main.py 
+- In the second terminal run Approach(A6)/Monitor.py
+- In the thrid terminal run Approach(A6)/training_subsystem.py
+
+
+
+
 ## Results
 ![result graph](Visualize_results/images/img1.png)
 

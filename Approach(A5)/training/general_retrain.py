@@ -33,6 +33,12 @@ def train_general_model(cleaned_data, model_save_path):
     # Initialize and train the linear regression model
     model = LinearRegression()
     model.fit(X_train, y_train)
+    y_pred = model.predict(X_train)
+    train_results = pd.DataFrame(data={'Predicted AQI':y_pred, 'Actual AQI':y_train})
+    train_results
+
+    #updating the knowledge file for baseline predictions of linear model
+    train_results.to_csv('path/to/Knowledge/train_results_general_model.csv', index=False)
 
     # Optionally, print model performance on test set
     print("Model training completed. Test set score:", model.score(X_test, y_test))

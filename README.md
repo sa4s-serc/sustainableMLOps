@@ -37,7 +37,7 @@ A6: Our approach.
 ## Installation
 - Create a virtual environment with `python -m venv .venv` and activate it with `source .venv/bin/activate`.  
 - Install the required packages with `pip install -r requirements.txt`. 
-- Please go through the code and change the path to your system's path wherever prompted.
+- Please go through the code and change the path to your system's absolute path wherever prompted.
 
 
 

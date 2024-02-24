@@ -66,4 +66,9 @@ def train_lstm_model(cleaned_data, model_save_path):
 
     # After all epochs, save the best model
     best_model.save('path/to/Models/model_lstm_wo_outlier_5')
+
+    train_predictions = best_model.predict(X_train).flatten()
+    # Save the DataFrame to a CSV file
+    train_results.to_csv('path/to/Knowledge/train_results_LSTM.csv', index=False)
+
     print(f"Best model trained and saved at {model_save_path} with validation loss: {best_val_loss}")

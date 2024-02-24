@@ -61,7 +61,7 @@ The same parameters are used in all alternate approaches as well.
 
 
 ## Running the approaches
-To run the different approaches follow the steps given below: 
+To run the different approaches follow the steps given below (make sure you are in the root directory of this project): 
 ### A1 & A2: 
 This approach is for testing the single models.
 - Open the Model_reload/model.csv

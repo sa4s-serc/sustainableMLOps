@@ -1,6 +1,7 @@
 # Towards Sustainable MLOps: A Self-Adaptation Approach
 
 Hiya Bhatt, Shrikara Arun, Adyansh Kakran and Karthik Vaidhyanathan
+Preprint: https://arxiv.org/abs/2404.04572
 ---
 
 ## About
